@@ -1,0 +1,24 @@
+@import url(./satoshi.css);
+
+:root{
+    --color-primary-bg:#F8F8F8;
+    --color-secondary-bg:#FFFFFF;
+
+    --color-emphasis:#FF5733;
+
+    --color-gray-dark:#323232;
+    --color-gray-medium:#525252;
+    --color-gray-light:#A8A8A8;
+
+    -color-feedback-red:#FF3E3E;
+
+    background: var(--color-primary-bg);
+}
+
+*{
+    font-family: satoshi, sans-serif;
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
