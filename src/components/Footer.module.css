@@ -1,0 +1,126 @@
+.Footer{
+    width: 80%;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: auto;
+
+    gap: 2rem;
+}
+
+.FooterImpressum{
+    display: flex;
+    align-items: center;
+    
+    gap: 2rem;
+    padding: 1rem 0 1rem 0;
+
+    & a{
+        display: flex;
+        align-items: center;
+
+        gap: 0.3rem;
+
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        letter-spacing: 0.8pt;
+        font-weight: 400;
+
+        cursor: pointer;
+        color: var(--color-gray-dark);
+
+        &:hover{
+            opacity: 80%;
+        }
+    }
+
+    & span{
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        letter-spacing: 0.8pt;
+        font-weight: 400;
+        color: var(--color-gray-dark);
+    }
+}
+
+.FooterSocialLinks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    & span {
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        letter-spacing: 0.8pt;
+        font-weight: 600;
+        color: var(--color-emphasis);
+
+        padding: 1rem 0 1rem 0;
+    }
+
+    & span:hover + .HoverableContent{
+        display: flex;
+    }
+}
+
+.HoverableContent{
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    gap: 1.5rem;
+
+    & span{
+        margin-left: 1rem;
+    }
+
+    & a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.3rem;
+  
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        letter-spacing: 0.9pt;
+        font-weight: 600;
+        color: var(--color-emphasis);
+
+        padding: 1rem 0 1rem 0;
+    }
+    & a:hover{
+        opacity: 70%;
+    }
+
+    &:hover{
+        display: flex;
+    }
+}
+
+@media only screen and (max-width: 911px){
+
+    .Footer{
+        width: 90%;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+    }
+
+    .FooterImpressum{
+        display: none;
+    }
+
+    .FooterSocialLinks{
+        & span{
+            font-size: 0.6rem;
+        }
+    }
+
+    .HoverableContent{
+        & a{
+            font-size: 0.6rem;
+        }
+    }
+}
