@@ -1,0 +1,131 @@
+.header{
+    width: 80%;
+
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 3rem;
+}
+
+.headerLeft{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2em;
+
+    & button{
+        color: var(--color-gray-medium);
+        background: transparent;
+        border: none;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 8px;
+
+        padding: 1rem 1rem 1rem 0; 
+    
+        cursor: pointer;
+    }
+
+    & button span:hover{
+        color: var(--color-gray-light);
+    }
+
+    & button:hover:after{
+        content: "PT";
+        margin-left: 0.5rem;
+    }
+
+    .IconTranslate{
+        font-size: 1.3rem;
+    }
+
+    & h1{
+        color: var(--color-gray-light);
+
+        font-size: 1rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+
+        & b{
+            color: var(--color-emphasis);
+
+            font-weight: 500;
+        }
+    }
+}
+
+.headerRight{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.GetInTouchButton{
+    color: var(--color-gray-medium);
+
+    height: 54px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+
+    font-size: 1rem;
+    font-weight: 900;
+    
+    padding: 1rem;
+    background: transparent;
+    border: none;
+
+    cursor: pointer;
+}
+
+.GetInTouchButton:hover{
+    color: var(--color-gray-dark);
+}
+.NavMenuButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 1rem 0 1rem 1rem;
+
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 911px) {
+    .GetInTouchButton{
+        display: none;
+    }
+
+    .header{
+        width: 90%;
+        justify-content: space-between;
+        gap: 0;
+    }
+
+    .headerLeft{
+        gap: 0;
+
+        & h1{
+            width: 180px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            font-size: 12px;
+
+            & b{
+                font-size: 0.9rem;
+            }
+        }
+    }
+}
