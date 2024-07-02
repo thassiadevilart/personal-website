@@ -1,6 +1,7 @@
 import styles from './App.module.css'
 import { Header } from './Header'
 import { Footer } from './Footer'
+import { Pagination } from './Pagination'
 
 
 export function App(){
@@ -8,6 +9,7 @@ export function App(){
     <div>
         <Header />
         <Footer />
+        <Pagination />
     </div>
     )
 }
