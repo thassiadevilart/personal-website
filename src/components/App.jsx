@@ -6,10 +6,13 @@ import { Pagination } from './Pagination'
 
 export function App(){
     return(
-    <div>
+    <main>
         <Header />
-        <Footer />
-        <Pagination />
-    </div>
+
+        <footer className={styles.Footer}>
+            <Footer />
+            <Pagination />
+        </footer>
+    </main>
     )
 }

@@ -1,15 +1,6 @@
-.positioning{
-    width: 80%;
-
-    position: absolute;
-    bottom: 30px;
-    left: 50%;
-    transform: translate(-50%, 0);
-}
-
-
-
 .content{
+    height: 50px;
+
     display: flex;
     flex-direction: column;
     align-items: end;
@@ -22,14 +13,9 @@
     text-align: left;
     font-weight: 400;
 
-    margin-bottom: 0.5rem;
-    height: 50px;
-   
-
     & :first-child{
-        padding-left: 30px;
+        padding-left: 40px;
         cursor: pointer;
-
     }
 
     & :last-child{
