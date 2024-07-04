@@ -1,0 +1,150 @@
+.GetInTouchWrapper{
+    width: 80%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.firstColumn{
+    display: flex;
+    flex-direction: column;
+
+    fieldset{
+        border: none;
+
+        legend{
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: var(--color-gray-light);
+            letter-spacing: 1pt;
+        }
+
+        legend + div{
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+
+    .labelInput{
+        width: 400px;
+
+        display: flex;
+        flex-direction: column;
+
+        color: var(--color-gray-medium);
+
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 1pt;
+        font-weight: 600;
+
+        border-bottom: 1px solid var(--color-gray-medium);
+
+        margin-top: 2rem;
+        margin-right: 1rem;
+
+        input{
+            height: 60px;
+
+            background: transparent;
+            border: none;
+            color: var(--color-gray-medium);
+
+            font-size: 1rem;
+        }
+
+        ::placeholder{
+            color: var(--color-gray-light);
+            
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1pt;
+            font-weight: 200;
+        }
+    }
+
+    .labelTextarea{
+        display: flex;
+        flex-direction: column;
+
+        color: var(--color-gray-medium);
+
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 1pt;
+        font-weight: 600;
+
+        border-bottom: 1px solid var(--color-gray-medium);
+
+        margin-top: 2rem;
+        margin-right: 1rem;
+
+        textarea{
+            height: 60px;
+
+            background: transparent;
+            border: none;
+            color: var(--color-gray-medium);
+
+            font-size: 1rem;
+
+            resize: none;
+            margin-top: 16px;
+        }
+
+        ::placeholder{
+            color: var(--color-gray-light);
+
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1pt;
+            font-weight: 200;
+        }
+    }
+
+    .buttonSubmit{
+        height: 40px;
+        width: 160px;
+
+        align-self: flex-end;
+
+        border: none;
+        background: var(--color-emphasis);
+        color: var(--color-primary-bg);
+
+        font-size: 1rem;
+        text-transform: uppercase;
+        font-weight: 400;
+        letter-spacing: 1pt;
+
+        margin-top: 1rem;
+        margin-right: 1rem;
+        border-radius: 2px;
+
+        cursor: pointer; 
+    }
+}
+
+.secondColumn{
+
+    div{
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        gap: 0.5rem;
+
+        color: var(--color-gray-medium);
+
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 1pt;
+
+        margin-bottom: 1rem;
+
+    }
+}
