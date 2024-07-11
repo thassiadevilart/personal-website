@@ -3,10 +3,13 @@ import { Header } from './Header'
 import { Footer } from './Footer'
 import { Pagination } from './Pagination'
 import { GetInTouch } from './GetInTouch'
+import { ButtonDownloadCV } from './ButtonDownloadCV'
 
 export function App(){
     return(
         <main className={styles.pageContentWrapper} >
+            <ButtonDownloadCV />
+
             <header>
                 <Header />
             </header>
