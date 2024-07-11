@@ -6,14 +6,19 @@ import { GetInTouch } from './GetInTouch'
 
 export function App(){
     return(
-    <main>
-        <Header />
-        <GetInTouch/>
+        <main className={styles.pageContentWrapper} >
+            <header>
+                <Header />
+            </header>
+            
+            <section className={styles.mainContent}>
+                <GetInTouch/>
+            </section>
 
-        <footer className={styles.Footer}>
-            <Footer />
-            <Pagination />
-        </footer>
-    </main>
+            <footer className={styles.Footer}>
+                <Footer />
+                <Pagination />
+            </footer>
+        </main>
     )
 }

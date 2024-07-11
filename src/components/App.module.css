@@ -1,14 +1,17 @@
-.Footer{
+.pageContentWrapper{
     width: 80%;
+    height: 100vh;
 
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 4rem 0 4rem 0;
+}
+
+.Footer{
     display: flex;
     align-items: end;
     justify-content: space-between;
-
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, 0);
-
-    padding-bottom: 3rem;
 }

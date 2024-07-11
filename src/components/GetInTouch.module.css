@@ -1,11 +1,10 @@
 .GetInTouchWrapper{
-    width: 80%;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: auto;
+
+    padding-top: 2.5rem;
 }
 
 .firstColumn{

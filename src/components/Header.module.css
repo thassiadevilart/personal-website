@@ -1,11 +1,7 @@
-.header{
-    width: 80%;
-
-    margin: auto;
+.Header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 3rem;
 }
 
 .headerLeft{

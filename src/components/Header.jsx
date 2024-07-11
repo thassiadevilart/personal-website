@@ -3,7 +3,7 @@ import { ArrowUpRight, List, Translate} from "@phosphor-icons/react";
 
 export function Header(){
     return(
-        <header className={styles.header} >
+        <header className={styles.Header} >
             <div className={styles.headerLeft}>
                 <button>
                     <span><Translate color="#343434" weight="light" className={styles.IconTranslate} /></span>
