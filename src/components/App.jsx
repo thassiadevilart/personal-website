@@ -1,8 +1,7 @@
 import styles from './App.module.css'
 import { Header } from './Header'
 import { Footer } from './Footer'
-import { Pagination } from './Pagination'
-import { GetInTouch } from './GetInTouch'
+import { Articles } from './Articles'
 import { ButtonDownloadCV } from './ButtonDownloadCV'
 
 export function App(){
@@ -15,12 +14,11 @@ export function App(){
             </header>
             
             <section className={styles.mainContent}>
-                <GetInTouch/>
+                <Articles/>
             </section>
 
             <footer className={styles.Footer}>
                 <Footer />
-                <Pagination />
             </footer>
         </main>
     )
