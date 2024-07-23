@@ -1,9 +1,9 @@
 import styles from './Articles.module.css';
 import{ArrowSquareOut} from "@phosphor-icons/react";
 
-export function Articles(){
+export function Articles(props){
     return (
-        <article className={styles.articlesWrapper} >
+        <section ref={props.refProp} className={styles.sectionWrapper} >
             <div className={styles.firstColumn} >
                 <a href="">
                     Articles
@@ -17,6 +17,6 @@ export function Articles(){
 
                 <a href="">More</a>
             </div>
-        </article>
+        </section>
     )
 }

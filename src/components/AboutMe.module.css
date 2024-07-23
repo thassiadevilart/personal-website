@@ -1,0 +1,18 @@
+.aboutMe{
+    height: 100vh;
+    width: 75%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+
+    color: var(--color-gray-medium);
+
+    p{
+        font-size: 1rem;
+        letter-spacing: 1pt;
+        line-height: 1.5rem;
+        margin-left: 3rem;
+    }
+}

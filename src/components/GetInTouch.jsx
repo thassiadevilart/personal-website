@@ -2,9 +2,9 @@ import styles from "./GetInTouch.module.css"
 import { PaperPlaneRight, MapPin, Phone} from "@phosphor-icons/react";
 
 
-export function GetInTouch(){
+export function GetInTouch(props){
     return(
-        <div className={styles.GetInTouchWrapper}>     
+        <div ref={props.refProp} className={styles.GetInTouchWrapper}>     
             <form className={styles.firstColumn} action="">
                 <fieldset>
                     <legend>Send a Mensage</legend>

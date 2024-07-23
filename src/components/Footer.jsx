@@ -1,7 +1,7 @@
 import styles from './Footer.module.css'
-import { ArrowSquareOut} from "@phosphor-icons/react";
+import { ArrowSquareOut, ArrowDown} from "@phosphor-icons/react";
 
-export function Footer(){
+export function Footer(props){
     return(
         <footer className={styles.Footer}>
             <div className={styles.FooterImpressum}>
@@ -34,6 +34,11 @@ export function Footer(){
                     </a>
                 </div>
             </div>
+
+            <button onClick={props.scrollDownProp} className={styles.scrollButton} >
+                <span>Home <br /> Articles</span>
+                <ArrowDown size={20} />
+            </button>
         </footer>
     )
 }
