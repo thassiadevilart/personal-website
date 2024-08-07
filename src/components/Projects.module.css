@@ -1,0 +1,40 @@
+.projectsSectionWrapper{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.projectCard{
+    width: 300px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.techTagsWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+
+    p{
+        color: var(--color-gray-light);
+
+        text-transform: uppercase;
+    }
+}
+.projectTitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    text-transform: uppercase;
+
+    color: var(--color-gray-medium);
+}

@@ -1,7 +1,6 @@
 .pageContentWrapper{
-    width: 80%;
     height: 100vh;
-
+        
     margin: auto;
     display: flex;
     flex-direction: column;

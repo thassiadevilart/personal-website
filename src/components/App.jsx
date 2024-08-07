@@ -1,11 +1,12 @@
 import styles from './App.module.css'
+import { useRef } from 'react'
+
 import { Header } from './Header'
 import { Footer } from './Footer'
 import { Articles } from './Articles'
 import {GetInTouch} from './GetInTouch'
-import { ButtonDownloadCV } from './ButtonDownloadCV'
-import { useRef } from 'react'
 import { AboutMe } from './AboutMe'
+import {Projects} from './Projects'
 
 export function App(){
 
@@ -14,9 +15,11 @@ export function App(){
     const articlesRef = useRef()
     const aboutMeRef = useRef()
     const getInTouchRef = useRef()
+    const projectsRef = useRef()
 
     const pagesRefs=[
         articlesRef,
+        projectsRef,
         aboutMeRef,
         getInTouchRef
     ]
@@ -34,14 +37,13 @@ export function App(){
 
     return(
         <main className={styles.pageContentWrapper} >
-            <ButtonDownloadCV />
-
             <header className={styles.Header}>
                 <Header/>
             </header>
             
             <section className={styles.mainContent}>
                 <Articles refProp={articlesRef} />
+                <Projects refProp={projectsRef} />
                 <AboutMe refProp={aboutMeRef}/>
                 <GetInTouch refProp={getInTouchRef} />
             </section>
